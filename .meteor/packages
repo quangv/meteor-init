@@ -21,3 +21,5 @@ coffeescript
 underscore
 kadira:flow-router
 kadira:blaze-layout
+accounts-ui
+accounts-password
