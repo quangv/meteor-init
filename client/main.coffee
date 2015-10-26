@@ -3,6 +3,10 @@
 # counter starts at 0
 Session.setDefault('counter', 0)
 
+Template.body.helpers
+  log: ->  # usage: {{log}}
+    console.log this
+
 Template.hello.helpers
   tasks: ->
     Tasks.find()
