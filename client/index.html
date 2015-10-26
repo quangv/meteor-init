@@ -2,11 +2,22 @@
   <title>app</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+<template name="mainLayout">
+  <header><h1>Welcome to Meteor!</h1></header>
 
+  <main>
+    {{> Template.dynamic template=template}}
+  </main>
+
+  <footer>footer</footer>
+</template>
+
+<template name="home">
+
+  <h2>Home</h2>
   {{> hello}}
-</body>
+
+</template>
 
 <template name="hello">
   <button>Click Me</button>

@@ -19,3 +19,5 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 audit-argument-checks
 coffeescript
 underscore
+kadira:flow-router
+kadira:blaze-layout
