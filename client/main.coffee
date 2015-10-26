@@ -20,5 +20,3 @@ Template.hello.events
     # increment the counter when button is clicked
     Session.set('counter', Session.get('counter') + 1)
 
-Accounts.ui.config
-  passwordSignupFields: 'EMAIL_ONLY'
