@@ -24,4 +24,12 @@
 <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
+
+  {{! Tasks}}
+  <ul>
+    {{#each tasks}}
+      <li>{{content}}</li>
+    {{/each}}
+  </ul>
+
 </template>
