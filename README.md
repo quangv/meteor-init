@@ -3,6 +3,7 @@
 __Features__
 - kadira:flow-router
 - coffeescript
+- less
 - accounts-ui
 
 
