@@ -7,6 +7,13 @@ Template.body.helpers
   log: ->  # usage: {{log}}
     console.log this
 
+Template.addTask.events
+  'keypress input': (event)->
+    if event.which is 13  # enter key
+      name = event.target.value
+      Meteor.call 'addTask', name
+      event.target.value = ''
+
 Template.hello.helpers
   tasks: ->
     Tasks.find()
