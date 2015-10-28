@@ -14,10 +14,11 @@ Template.addTask.events
       Meteor.call 'addTask', name
       event.target.value = ''
 
-Template.hello.helpers
+Template.tasksList.helpers
   tasks: ->
     Tasks.find()
 
+Template.hello.helpers
   counter: ->
     Session.get('counter')
 

@@ -21,21 +21,24 @@
   {{/if}}
 </template>
 
-<template name="addTask">
-  <input placeholder="add task" />
-</template>
-
 <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
 
   {{> addTask}}
+  {{> tasksList}}
 
-  {{! Tasks}}
+</template>
+
+<template name="addTask">
+  <input placeholder="add task" />
+</template>
+
+<template name="tasksList">
   <ul>
     {{#each tasks}}
       <li>{{content}}</li>
     {{/each}}
   </ul>
-
 </template>
+
