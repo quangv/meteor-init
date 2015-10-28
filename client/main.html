@@ -14,13 +14,11 @@
   <footer>footer</footer>
 </template>
 
-<template name="home">
-
-  <h2>Home</h2>
+<template name="homeRoute">
   {{#if currentUser}}
+    <h2>Home</h2>
     {{> hello}}
   {{/if}}
-
 </template>
 
 <template name="hello">
