@@ -1,5 +1,5 @@
 Meteor.publish 'tasks', ->
-  Tasks.find()
+  Tasks.find(owner:@userId)
 
 Meteor.methods
   addTask: (text)->
