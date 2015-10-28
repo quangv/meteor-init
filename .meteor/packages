@@ -24,4 +24,5 @@ kadira:blaze-layout
 accounts-ui
 accounts-password
 check
-less
+semantic:ui
+flemay:less-autoprefixer
