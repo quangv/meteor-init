@@ -3,10 +3,6 @@
 # counter starts at 0
 Session.setDefault('counter', 0)
 
-Template.body.helpers
-  log: ->  # usage: {{log}}
-    console.log this
-
 Template.addTask.events
   'keypress input': (event)->
     if event.which is 13  # enter key
